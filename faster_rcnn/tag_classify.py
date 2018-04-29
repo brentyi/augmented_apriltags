@@ -77,7 +77,7 @@ sys.path.append("..")
 # In[4]:
 
 # What model to download.
-MODEL_NAME = 'tag8860_inference_graph'
+MODEL_NAME = 'two_pm_graph'
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
@@ -256,6 +256,7 @@ def find_corners(img):
               final_points[i][-1] = -1
 
   final_points = np.asarray([p[0] for p in final_points], dtype=np.int32)
+  print(final_points)
   cv2.drawContours(img, [final_points], 0, (0,0,255), 8)
 
 ####
