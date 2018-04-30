@@ -77,7 +77,7 @@ sys.path.append("..")
 # In[4]:
 
 # What model to download.
-MODEL_NAME = 'two_pm_graph'
+MODEL_NAME = 'six_pm_graph'
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
